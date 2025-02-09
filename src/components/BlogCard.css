@@ -1,0 +1,9 @@
+.blog-card img {
+    height: 300px;
+}
+
+.blog-card p {
+    color: rgb(155, 155, 155);
+    font-size: 0.9rem;
+    margin: 10px 0;
+}

@@ -1,8 +1,9 @@
 import './Navbar.css'
 import { IoSearch } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { TiThMenu } from "react-icons/ti";
 import Logo from '../assets/logo.png'
+import { NavLink } from 'react-router';
 
 
 export const Navbar = () => {
@@ -11,21 +12,25 @@ export const Navbar = () => {
         <div className="main-wrapper">
             <div className="top-nav">
                 <div className="logo-side">
-                    <img src={Logo} className="logo"/>
+                    <NavLink to = "/">
+                        <img src={Logo} className="logo"/>
+                        </NavLink>
                     <div className="icons">
                         <IoSearch />
+                        <div className='cart'>
                         <FaShoppingCart />
                         <div className='cart-list-number'>0</div>
+                        </div>
                     </div>
                 </div>
-                <div className="menu-side"><RxHamburgerMenu /></div>
+                <div className="ham-side"> <span><TiThMenu /></span></div>
             </div>
             <div className="bottom-nav">
-                <a href="#">All</a>
-                <a href="#">Sale</a>
-                <a href="#">Apple</a>
-                <a href="#">Samsung</a>
-                <a href="#">Google</a>
+                <NavLink to="/" > All </NavLink>
+                <NavLink to="/sale" > Sale </NavLink>
+                <NavLink to="/apple" > Apple </NavLink>
+                <NavLink to="/samsung" > Samsung </NavLink>
+                <NavLink to="/google" > Google </NavLink>
             </div>
         </div>
     </div>

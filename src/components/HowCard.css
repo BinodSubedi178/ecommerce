@@ -1,0 +1,67 @@
+.how-card-wrapper {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.how-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-area img {
+    height: 280px;
+    aspect-ratio: 1/1;
+    border-radius: 2px;
+}
+
+.how-text-area {
+    position: relative;
+}
+
+.numbering-area {
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.how-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: -15%;
+}
+
+.how-text-area h4 {
+    font-size: 1.3rem;
+}
+
+.how-text-area p {
+    font-size: 1rem;
+    color: rgb(79, 79, 79);
+    line-height: 30px;
+    margin-top: 10px;
+}

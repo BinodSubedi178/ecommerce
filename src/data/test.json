@@ -1,0 +1,48 @@
+{
+  "phones": [
+    {
+      "id": "1",
+      "product_name": "Samsung Galaxy S25 Ultra",
+      "image": "src/assets/s25u.png",
+      "price": "$ 1200.00 ",
+      "reduced_price": "$ 1200.00 "
+    },
+    {
+      "id": "2",
+      "product_name": "iPhone 16 Pro Max",
+      "price": "$ 1300.00 ",
+      "image": "src/assets/i16pm.png",
+      "reduced_price": "$ 1300.00 "
+    },
+    {
+      "id": "3",
+      "product_name": "Google Pixel 9 Pro",
+      "price": "$ 1100.00 ",
+      "reduced_price": "$ 1000.00 ",
+      "image": "src/assets/gp9p.png"
+    }
+  ],
+  "consoles": [
+    {
+      "id": "11",
+      "product_name": "PS5 Console (Digital)",
+      "price": "$ 679.00",
+      "reduced_price": "$ 679.00",
+      "image": "src/assets/ps5digital.png"
+    },
+    {
+      "id": "12",
+      "product_name": "Xbox Seriex X Console",
+      "price": "$ 799.00",
+      "reduced_price": "$ 749.00",
+      "image": "src/assets/xbox.png"
+    },
+    {
+      "id": "13",
+      "product_name": "Nintendo Switch",
+      "price": "$ 449.00",
+      "reduced_price": "$ 449.00",
+      "image": "src/assets/nintendo.png"
+    }
+  ]
+}

@@ -22,3 +22,8 @@
     background-color: #fff;
     font-size: 0.9rem;
 }
+
+.banner-button:hover {
+    background-color: rgb(212, 206, 206);
+    cursor: pointer;
+}

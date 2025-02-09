@@ -1,14 +1,17 @@
 import './App.css'
-import {Navbar, Promotion} from './components/AllComponents'
+import { Navbar, Promotion, Footer } from './components/AllComponents'
+import { Router } from './Routes/Router'
 
 const App = () => {
-
 
   return (
     <>
     <Promotion/>
     <Navbar />
+    <Router/>
+    <Footer />
     </>
+    
   )
 }
 
