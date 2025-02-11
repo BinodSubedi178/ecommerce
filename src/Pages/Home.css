@@ -1,3 +1,8 @@
+:root {
+    --heading-fonts: rgb(241, 241, 241);
+    --secondary-heading:
+}
+
 h1 {
     font-size: 5rem;
     letter-spacing: 10px;
@@ -23,7 +28,7 @@ p {
 
 .hero-section h1,
 p {
-    color: rgb(241, 241, 241);
+    color: var(--heading-fonts);
 }
 
 .hero-section button {
@@ -211,6 +216,9 @@ h3 {
 
 .perks-section {
     font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
     margin-bottom: 100px;

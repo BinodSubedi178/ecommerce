@@ -5,13 +5,13 @@ import { Router } from './Routes/Router'
 const App = () => {
 
   return (
-    <>
-    <Promotion/>
-    <Navbar />
-    <Router/>
-    <Footer />
-    </>
-    
+    <div className='app'>
+      <Promotion />
+      <Navbar />
+      <Router />
+      <Footer />
+    </div>
+
   )
 }
 
