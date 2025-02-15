@@ -33,6 +33,10 @@
     font-size: 1.3rem;
 }
 
+.icons span {
+    cursor: pointer;
+}
+
 .cart {
     display: flex;
     gap: 5px;

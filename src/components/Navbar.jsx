@@ -5,24 +5,31 @@ import { FaShoppingCart } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import Logo from '../assets/logo.png'
 import { NavLink } from 'react-router';
-import { HamCard, Promotion } from './AllComponents';
+import { HamCard, Promotion, Search } from './AllComponents';
 
 
 export const Navbar = () => {
     const [hamStatus, setHamStatus] = useState(false)
+    const [searchCross, setSearchCross] = useState(false)
+    const [crossState, setCrossState] = useState(false)
 
     const handleHamClick = () => {
         setHamStatus(!hamStatus)
     }
 
-    const [crossState, setCrossState] = useState(false)
 
     const handleCrossClick = () => {
         setCrossState(!crossState)
     }
 
+    const handleSearchCross = () => {
+        setSearchCross(!searchCross)
+    }
+
     return (
         <div>
+            {searchCross ? <Search handleSearchCross={handleSearchCross} /> : ""}
+
             <Promotion handleCrossClick={handleCrossClick} crossState={crossState} />
             <div className="main-wrapper">
                 <div className="top-nav">
@@ -31,7 +38,7 @@ export const Navbar = () => {
                             <img src={Logo} className="logo" />
                         </NavLink>
                         <div className="icons">
-                            <IoSearch />
+                            <span onClick={handleSearchCross}><IoSearch /></span>
                             <div className='cart' onClick={handleCrossClick}>
                                 <FaShoppingCart />
                                 <div className='cart-list-number'>0</div>
